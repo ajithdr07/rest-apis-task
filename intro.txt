@@ -1,0 +1,19 @@
+End points created are:
+    - POST /api/get-Token
+        pass username and password in the json body
+        Token will be recieved in the response cookie, 
+        it is httpOnly cookie and will be expire in 15 minutes.
+    
+    - POST /api/client-agency
+        pass client and agency details in the following format
+        {
+            agency: {},
+            clients: [
+                {},{}
+            ]
+        }
+
+    - PATCH /api/clients/<client_id>
+        pass client details to be updated.
+
+    - GET /api/top-clients
